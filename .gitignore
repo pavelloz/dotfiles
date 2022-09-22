@@ -1,15 +1,9 @@
 Backup
-.DS_Store
 .svn
 .git
 .DS_Store
 .AppleDouble
-.viminfo
 *.swp
-.vim/.netrwhist
 
 *.cache
 *.pyc
-
-bin.Darwin/local
-bin.Linux/local

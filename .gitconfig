@@ -1,8 +1,8 @@
 [user]
-	name = Alan Norton
-	email = git@nonration.al
+	name = Paweł Kowalski
+	email = pavelloz@gmail.com
 [github]
-    user = nonrational
+    user = pavelloz
 [core]
     # Use custom `.gitignore` and `.gitattributes`
     attributesfile = ~/.gitattributes
@@ -21,70 +21,6 @@
     # Prevent showing files whose names contain non-ASCII symbols as unversioned.
     # http://michael-kuehnel.de/git/2014/11/21/git-mac-osx-and-german-umlaute.html
     precomposeunicode = false
-[alias]
-    pp = push
-
-    pro = "!hub pr show || hub browse"
-
-    bump = "commit --allow-empty -m'ci-bump'"
-    buu = "branch --unset-upstream"
-
-    ci = commit -v
-    co = checkout
-
-    df = "diff --name-only"
-    dfo = "df origin/master"
-    dc = diff --cached
-
-    f = "fetch --tags --force --prune"
-    ri = "rebase -i"
-    rio = "!git f && git rebase -i origin/master"
-    mov = "branch -m"
-
-    head = !git r -1
-    hp = "!. ~/.githelpers && show_git_head"
-    r = !GIT_NO_PAGER=1 git l -10
-    ra = !git r --all
-    l = "!. ~/.githelpers && pretty_git_log"
-    la = !git l --all
-    b = "!. ~/.githelpers && pretty_git_branch"
-    bs = "!. ~/.githelpers && pretty_git_branch_sorted"
-    brr = branch --sort=-committerdate
-
-    lt = "!git tag | sort -n -t. -k1,1 -k2,2 -k3,3"
-    stag = "!git tag | sort -n -t. -k1,1 -k2,2 -k3,3 -k4,4"
-
-    amend = commit --amend
-    aa = add --all .
-    st = status
-    stp = status --porcelain
-
-    up = "!git f && hub sync"
-
-    modified = "!git ls-files --modified"
-    deleted = "!git ls-files --deleted"
-    untracked = "!git ls-files --others --exclude-standard"
-    new = untracked
-
-    # ignore untracked files in this specific repo
-    is-it-just-me = "!$EDITOR .git/info/exclude"
-
-    # ignore changes to files that are never going to be committed
-    regard = update-index --no-assume-unchanged
-    disregard = update-index --assume-unchanged
-    dissed = !git ls-files -v | grep ^[a-z] || echo "None"
-
-    broom = "!. ~/.githelpers && delete_remoteless_branches_interactive"
-    spring-cleaning = "!. ~/.githelpers && delete_all_my_branches_interactive"
-
-    wtf = "!. ~/.githelpers && what_the_hell_just_happened"
-    nuke = "!git reset --hard HEAD && git clean -fd"
-
-    aww = "!. ~/.githelpers && add_wildcard"
-    uww = "!. ~/.githelpers && reset_wildcard"
-
-    sup = "!. ~/.githelpers && current_pulls_into_here"
-    super = "!. ~/.githelpers && current_pulls_into_here_with_colorful_status"
 
 [status]
     relativePaths = true
