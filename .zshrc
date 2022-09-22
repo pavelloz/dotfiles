@@ -12,8 +12,6 @@ export LESS="$LESS -i -F -R -X"
 alias ls="/bin/ls -F"
 alias ll='ls -l'
 
-host=$(uname -n | sed -e 's/\.local//g')
-
 # asdf
 brew_prefix_asdf="$brewery/opt/asdf"
 export ASDF_DIR="$brew_prefix_asdf"

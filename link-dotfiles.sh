@@ -41,12 +41,9 @@ symlink(){
 dot_files=$(
     find . -maxdepth 1 -name '.*' \
         ! -name '.' \
-        ! -name '.AppleDouble' \
         ! -name '.DS_Store' \
         ! -name '.git' \
-        ! -name '.github' \
         ! -name '.gitignore' \
-        ! -name '.gitmodules' \
         ! -name '.macos'
 )
 

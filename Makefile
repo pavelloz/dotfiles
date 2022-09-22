@@ -28,9 +28,9 @@ link-dotfiles:
 # 	rm -rf $$HOME/Library/Application\ Support/Sublime\ Text\ 3
 # 	ln -s $$HOME/.sublime3 $$HOME/Library/Application\ Support/Sublime\ Text\ 3
 
-# link-vscode:
-# 	ln -sf $$PWD/etc/vscode.keybindings.json $$HOME/Library/Application\ Support/Code/User/keybindings.json
-# 	ln -sf $$PWD/etc/vscode.settings.json $$HOME/Library/Application\ Support/Code/User/settings.json
+link-vscode:
+	ln -sf $$PWD/etc/vscode.keybindings.json $$HOME/Library/Application\ Support/Code/User/keybindings.json
+	ln -sf $$PWD/etc/vscode.settings.json $$HOME/Library/Application\ Support/Code/User/settings.json
 
 backup-preferences:
 	code --list-extensions > $$PWD/etc/vscode--list-extensions.txt
