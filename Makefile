@@ -14,11 +14,7 @@ brew-bundle:
 	brew bundle
 
 asdf:
-	asdf plugin-add golang
-	asdf plugin-add ruby
 	asdf plugin-add nodejs
-	asdf plugin-add erlang
-	asdf plugin-add elixir
 
 macos:
 	sh .macos
@@ -27,14 +23,14 @@ link-dotfiles:
 	mkdir -p $$HOME/.local
 	./link-dotfiles.sh
 
-link-sublime:
-	git clone https://github.com/nonrational/sublime3 $$HOME/.sublime3
-	rm -rf $$HOME/Library/Application\ Support/Sublime\ Text\ 3
-	ln -s $$HOME/.sublime3 $$HOME/Library/Application\ Support/Sublime\ Text\ 3
+# link-sublime:
+# 	git clone https://github.com/pavelloz/sublime3 $$HOME/.sublime3
+# 	rm -rf $$HOME/Library/Application\ Support/Sublime\ Text\ 3
+# 	ln -s $$HOME/.sublime3 $$HOME/Library/Application\ Support/Sublime\ Text\ 3
 
-link-vscode:
-	ln -sf $$PWD/etc/vscode.keybindings.json $$HOME/Library/Application\ Support/Code/User/keybindings.json
-	ln -sf $$PWD/etc/vscode.settings.json $$HOME/Library/Application\ Support/Code/User/settings.json
+# link-vscode:
+# 	ln -sf $$PWD/etc/vscode.keybindings.json $$HOME/Library/Application\ Support/Code/User/keybindings.json
+# 	ln -sf $$PWD/etc/vscode.settings.json $$HOME/Library/Application\ Support/Code/User/settings.json
 
 backup-preferences:
 	code --list-extensions > $$PWD/etc/vscode--list-extensions.txt

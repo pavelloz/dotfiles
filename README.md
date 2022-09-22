@@ -10,7 +10,7 @@ Because storing cross-machine config is cumbersome. Installing Git is &mdash; fo
 #!/usr/bin/env sh
 xcode-select --install
 
-git checkout https://github.com/nonrational/dotfiles .dotfiles
+git checkout https://github.com/pavelloz/dotfiles .dotfiles
 cd .dotfiles
 make
 ```
@@ -19,7 +19,7 @@ make
 
 ```shell
 #!/usr/bin/env sh
-git checkout git@github.com:nonrational/dotfiles .dotfiles
+git checkout git@github.com:pavelloz/dotfiles .dotfiles
 cd .dotfiles
 make link-dotfiles
 ```

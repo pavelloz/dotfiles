@@ -34,9 +34,6 @@
 [gist]
     browse = true
     private = true
-[hub]
-    protocol = https
-    user = nonrational
 [pull]
     rebase = true
 [push]
