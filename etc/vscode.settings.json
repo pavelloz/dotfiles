@@ -111,5 +111,8 @@
   "security.workspace.trust.banner": "never",
   "security.workspace.trust.startupPrompt": "never",
   "window.zoomLevel": 2,
-  "workbench.statusBar.visible": false
+  "workbench.statusBar.visible": false,
+  "sync.gist": "46a7acd94089eb2371c18e5a90870c58",
+  "sync.autoDownload": true,
+  "sync.autoUpload": true
 }
