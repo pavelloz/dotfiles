@@ -1,14 +1,12 @@
-# set -x
+export PATH=$HOME/bin:$PATH
 
-# https://scriptingosx.com/2019/07/moving-to-zsh-part-4-aliases-and-functions/
+ZSH_THEME="miloshadzic"
 
-autoload -Uz vcs_info
-precmd() { vcs_info }
+plugins=(pj git)
 
-export EDITNOW='subl'
-export EDITOR='subl -w'
-export LESS="$LESS -i -F -R -X"
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+alias c="clear"
 alias ls="/bin/ls -F"
 alias ll='ls -l'
 
@@ -18,5 +16,6 @@ export ASDF_DIR="$brew_prefix_asdf"
 . "$brew_prefix_asdf/asdf.sh"
 
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
+export ZSH="/Users/pavel/.oh-my-zsh"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
