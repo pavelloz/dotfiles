@@ -23,4 +23,5 @@ ritwickdey.LiveServer
 rvest.vs-code-prettier-eslint
 sleistner.vscode-fileutils
 wayou.vscode-todo-highlight
+yzhang.markdown-all-in-one
 ziyasal.vscode-open-in-github
