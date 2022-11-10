@@ -10,11 +10,6 @@ alias c="clear"
 alias ls="/bin/ls -F"
 alias ll='ls -l'
 
-# asdf
-brew_prefix_asdf="$brewery/opt/asdf"
-export ASDF_DIR="$brew_prefix_asdf"
-. "$brew_prefix_asdf/asdf.sh"
-
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
 export ZSH="/Users/pavel/.oh-my-zsh"
 
